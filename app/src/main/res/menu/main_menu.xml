@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/clear"
+        android:title="清空"
+       android:showAsAction="never"/>
+  
+  <item
+        android:id="@+id/reconnect"
+        android:title="重连"
+        android:showAsAction="never"/>
+
+    
+
+</menu>

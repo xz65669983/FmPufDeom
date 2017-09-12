@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_background"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PUFread"
+            android:textColor="@color/white"
+
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/tv_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="right"
+            android:textColor="#0fc4d9"
+            android:background="@drawable/button_right"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:background="#bebebe">
+        <TextView
+            android:id="@+id/tv_tag_status"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20sp"
+            android:text="请靠近标签"/>
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/tv_tagid"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+
+            />
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <!--<EditText-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/input_ip"-->
+            <!--android:hint="请输入ip地址"-->
+            <!--android:layout_weight="5" />-->
+        <!--<Button-->
+            <!--android:id="@+id/connect"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="连接"/>-->
+
+    <!--</LinearLayout>-->
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="与标签交互："/>
+    <ScrollView
+        android:id="@+id/sv_tag"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/promt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="与服务交互："/>
+    <ScrollView
+        android:id="@+id/sv_server"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/connectServer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FF0000FF"
+            />
+
+    </ScrollView>
+</LinearLayout>

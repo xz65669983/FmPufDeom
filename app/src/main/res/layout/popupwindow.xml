@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_bg"
+    android:orientation="vertical"
+    android:paddingBottom="2dp">
+
+    <TextView
+        android:id="@+id/pop_reconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/pop_text_style"
+        android:text="重连"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/list_line"/>
+
+    <TextView
+        android:id="@+id/pop_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/pop_text_style"
+        android:text="清空"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/list_line"/>
+
+
+</LinearLayout>
